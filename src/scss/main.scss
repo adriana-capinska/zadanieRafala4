@@ -1,0 +1,86 @@
+@import "~normalize.css";
+
+@import "_variables";
+@import "modules/hello.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+body {
+  background: $wtf;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: 375px;
+  height: 812px;
+  background: #3767AD;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  width: 275px;
+  height: 48px;
+  left: 70px;
+  top: 87px;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bike {
+  background-image: url(/src/assets/img/File_Znak_C-13.svg);
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  left: 47px;
+  top: 203px;
+  &__number {
+    position: absolute;
+    left: 38.13%;
+    right: 38.4%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 112px;
+    line-height: 131px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  &__add {
+    position: absolute;
+    width: 216px;
+    height: 47px;
+    left: 79px;
+    top: 531px;
+  }
+  &__remove {
+    position: absolute;
+    width: 184px;
+    height: 23px;
+    left: 110px;
+    top: 615px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100%;
+    border: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #3767AD;
+    color: #F5E5E7;
+  }
+}
